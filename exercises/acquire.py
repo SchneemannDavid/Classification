@@ -22,7 +22,7 @@ def get_titanic_data():
     
     # if file is available locally, read it
     if os.path.isfile(filename):
-        return pd.read_csv(filename, index=False)
+        return pd.read_csv(filename)
     
     # if file not available locally, acquire data from SQL database
     # and write it as csv locally for future use
@@ -60,7 +60,7 @@ def get_iris_data():
     
     # if file is available locally, read it
     if os.path.isfile(filename):
-        return pd.read_csv(filename, index=False)
+        return pd.read_csv(filename)
     
     # if file not available locally, acquire data from SQL database
     # and write it as csv locally for future use
@@ -98,7 +98,7 @@ def get_telco_data():
     
     # if file is available locally, read it
     if os.path.isfile(filename):
-        return pd.read_csv(filename, index=False)
+        return pd.read_csv(filename)
     
     # if file not available locally, acquire data from SQL database
     # and write it as csv locally for future use
